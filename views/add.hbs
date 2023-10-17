@@ -1,0 +1,46 @@
+<div class="w-75 mx-auto">
+  <h1>Add products</h1>
+  <form action="/add-product" method="post">
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Title"
+        name="title"
+      />
+      <label for="floatingInput">Title</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        name="description"
+        type="text"
+        class="form-control"
+        id="floatingTextarea2"
+        placeholder="Description"
+        style="height: 100px;"
+      />
+      <label for="floatingTextarea2">Description</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        name="image"
+        type="text"
+        class="form-control"
+        id="floatingTextarea2"
+        placeholder="Image"
+      />
+      <label for="floatingTextarea2">Image</label>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        name="price"
+        type="number"
+        class="form-control"
+        aria-label="Dollar amount (with dot and two decimal places)"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">add</button>
+  </form>
+</div>
